@@ -10,7 +10,7 @@
 
 #import <objc/runtime.h>
 
-@implementation ABCDObject 
+@implementation ABCDObject
 
 + (id)alloc {
         return class_createInstance(self, 0);
