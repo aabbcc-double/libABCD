@@ -17,7 +17,6 @@
 }
 
 - (id)init {
-        isa = object_getClass(self);
         return self;
 }
 
@@ -30,7 +29,7 @@
 }
 
 - (Class)class {
-        return isa;
+        return object_getClass(self);
 }
 
 @end
