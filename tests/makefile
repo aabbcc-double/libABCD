@@ -3,8 +3,7 @@ BUILD=./build
 INC=-I$(LIBABCD)/ -I./ -I./minunit
 
 testLIBABCD: clean buildFolder
-	gcc main.m $(LIBABCD)/*.m $(INC) -o $(BUILD)/tests -lobjc -O0
-
+	gcc -x objective-c main.m $(LIBABCD)/*.m $(INC) -o $(BUILD)/tests -lobjc
 buildFolder:
 	mkdir $(BUILD)
 
