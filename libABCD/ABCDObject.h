@@ -11,7 +11,9 @@
 
 #import <objc/runtime.h>
 
-@interface ABCDObject
+@interface ABCDObject {
+        Class isa;
+}
 
 + (id)alloc;
 - (id)init;
